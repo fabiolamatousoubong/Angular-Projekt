@@ -1,0 +1,25 @@
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.rows{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.contain{
+    width: 100vw;
+
+}
+
+
+.cards{
+    width: 200px;
+    height: 100px;
+}

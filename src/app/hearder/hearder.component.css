@@ -1,0 +1,14 @@
+.hearder{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.center-right{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.fa-bars{
+    font-size: 30px;
+}

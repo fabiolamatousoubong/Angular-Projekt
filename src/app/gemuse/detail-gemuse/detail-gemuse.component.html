@@ -1,0 +1,41 @@
+<div *ngIf="gemuse" class="row">
+    <div class="col s12 m8 offset-m2">
+        <h2 class="header center">{{ gemuse.name }}</h2>
+        <div class="card horizontal hoverable">
+            <div class="card-image">
+                <img [src]="gemuse.picture">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <table class="bordered striped">
+                        <tbody>
+                            <tr>
+                                <td>Name</td>
+                                <td><strong>{{ gemuse.name }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Quantity</td>
+                                <td><strong>{{ gemuse.quantity }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>minimal Quantity</td>
+                                <td><strong>{{ gemuse.quantity_min }}</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td>Date</td>
+                                <td><em>{{ gemuse.created | date:"dd/MM/yyyy" }}</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+                    <a (click)="goToGemuseList()">Zurück</a>
+                    <a (click)="goToEditGemuse(gemuse)">Update</a>
+                    <a>Löschen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h4 *ngIf='!gemuse' class="center">Kein Gemuse !</h4>

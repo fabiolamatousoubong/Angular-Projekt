@@ -1,0 +1,25 @@
+<div class="contain">
+    <div class="rows">
+
+        <div *ngFor="let  gemuse of gemuseList" class="col m6 s3">
+            <div (click)="goToGemuse(gemuse)" class="cards horizontal" gemuseBorderCard>
+                <div class="cards images">
+                    <img [src]="gemuse.picture" />
+                </div>
+
+                <div class="cards-starcked">
+                    <div class="cards-contend">
+                        <p>{{ gemuse.name }}</p>
+                        <p><small>{{ gemuse.created | date:"dd/MM/YYYY"}}</small></p>
+                        <!-- //lutilisation du pipe se fait toujours de la
+                            meme maniere (| et le nom) par exemple uppercase met les dates en majusccul -->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
